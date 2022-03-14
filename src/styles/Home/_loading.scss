@@ -1,0 +1,10 @@
+.loading {
+  height: 70vh;
+  width: 100%;
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  font-weight: 700;
+}

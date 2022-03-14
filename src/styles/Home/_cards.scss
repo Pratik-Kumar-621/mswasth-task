@@ -1,0 +1,46 @@
+.cards {
+  margin: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+  grid-gap: 24px;
+  .card {
+    &:hover {
+      cursor: pointer;
+    }
+    background-color: #fff;
+    position: relative;
+    border-radius: 7px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.2);
+    min-height: 120px;
+    padding: 20px 30px;
+    .medname {
+      font-size: 24px;
+      font-weight: 700;
+      padding: 5px 0 10px 0;
+    }
+    .saltname {
+      font-size: 18px;
+      .salts {
+        font-size: 16px;
+        &:after {
+          position: relative;
+          content: ", ";
+          font-weight: 500;
+        }
+        &:nth-last-child(2):after {
+          position: relative;
+          content: "and";
+          font-weight: 500;
+        }
+        &:last-child:after {
+          position: relative;
+          content: "";
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  .toast {
+    display: none;
+  }
+}
